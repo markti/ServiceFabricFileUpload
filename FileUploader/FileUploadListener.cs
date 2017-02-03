@@ -91,7 +91,7 @@ namespace FileUploader
 
         private void MyProcessMethod(string originalFileName, Stream dataStream)
         {
-            CloudStorageAccount csa = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=handbrake;AccountKey=7Te6E6Tfanht4+MFV8CMxV+dTFHX/HKCypEN0vAB11O+5xwqALQsx+A9TMuIMunYfuK7kzJpl/AjFhlEKfuVkQ==;");
+            CloudStorageAccount csa = CloudStorageAccount.Parse("");
 
             var blobName = new FileInfo(originalFileName.Replace("\"", "")).Name;
 
